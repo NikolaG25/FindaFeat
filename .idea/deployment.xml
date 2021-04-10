@@ -5,7 +5,7 @@
       <paths name="projets2">
         <serverdata>
           <mappings>
-            <mapping deploy="/sites/landing-page.findfeat.fr" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/sites/FindFeat.fr" local="$PROJECT_DIR$" web="http://landing-page.findfeat.fr/" />
           </mappings>
         </serverdata>
       </paths>

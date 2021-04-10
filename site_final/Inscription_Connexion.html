@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="css/style_landing_page.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/typo.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Open+Sans&display=swap" rel="stylesheet">
+        <title>Inscription/Connexion</title>
+    </head>
+    <body id="inscription_connexion" class="grid">
+    <img class="background_inscription" src="img/background_inscription.webp" alt="Background_inscription">
+    <svg class="separation_inscription_connexion" xmlns="http://www.w3.org/2000/svg" width="100" height="634.116" viewBox="0 0 100 634.116">
+        <g id="centre" transform="translate(-910 -306.5)">
+            <path id="Tracé_9" data-name="Tracé 9" d="M0,0V634.116" transform="translate(960.5 306.5)" fill="none" stroke="#ff8312" stroke-width="3"/>
+            <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(910 573.616)" fill="#fcfcfc" stroke="#ff8312" stroke-width="3">
+                <circle cx="50" cy="50" r="50" stroke="none"/>
+                <circle cx="50" cy="50" r="48.5" fill="none"/>
+            </g>
+        </g>
+    </svg>
+    <button class = "button_retour_accueil" type="button" onclick="window.location.href = 'landing-page.html'" >Accueil</button>
+    <div class="connexion_inscription">
+        <div class="connexion">
+            <form>
+                    <label class="zone_texte_email_connexion" for="email_connexion">Email</label>
+                    <input type="text" id="email_connexion" name="email">
+
+                    <label class="zone_texte_password_connexion" for="password">Mot de passe</label>
+                    <input type="text" id="password" name="password">
+
+                <input id="bouton_connexion" type="submit" value="Connexion">
+            </form>
+        </div>
+
+        <div class="inscription">
+            <form>
+                <label class="zone_texte_fname_inscription" for="fname">Prénom</label>
+                <input type="text" id="fname" name="prénom">
+
+                <label class="zone_texte_lname_inscription" for="lname">Nom</label>
+                <input type="text" id="lname" name="nom">
+
+                <label class="zone_texte_email_inscription" for="email_inscription">Votre email</label>
+                <input type="text" id="email_inscription" name="email">
+
+
+                <label class="zone_texte_password_inscription" for="mot_de_passe">Mot de passe</label>
+                <input type="text" id="mot_de_passe" name="mot_de_passe">
+
+                <input id="bouton_inscription" type="submit" value="S'inscrire">
+            </form>
+        </div>
+    </div>
+
+    <footer id="footer_connexion">
+        <form>
+            <input type="checkbox" id="check" name="mentions_legales" value="mentions">
+            <label for="check"> J'accepte que les données que je donne soient utilisées à des fins économiques</label>
+        </form>
+    </footer>
+
+    </body>
+</html>
