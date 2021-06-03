@@ -67,7 +67,6 @@ main {
 }
 
 .zone_slogan_reseaux {
-    display: contents;
     color: #fcfcfc;
 }
 
@@ -392,19 +391,7 @@ form *{
     width: 18.5vw;
 }
 
-::-webkit-scrollbar {
-    width: 1px;
-}
 
-
-::-webkit-scrollbar-track {
-    background: #fcfcfc;
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-    background-color: #FF8312;
-}
 
 /* .reveal {
     opacity: 0;
@@ -641,3 +628,154 @@ input[type=text], input[type=submit] {
     margin-bottom: auto;
     margin-top: auto;
 }
+
+@media  screen and (max-width: 480px) {
+    #header_landing > .background {
+        width: auto;
+        height: 100vh;
+        position: absolute;
+        left: -300px;
+    }
+
+}
+
+@media  screen and (max-width: 768px) {
+    #header_landing .fond {
+        display: none;
+    }
+
+    #header_landing > .background {
+        width: auto;
+        height: 100vh;
+    }
+
+    .zone_slogan_reseaux {
+        grid-column: 1/span 15;
+        grid-row: 5/span 2;
+        background-color: rgba(70, 71, 77, 0.75);
+    }
+
+    .zone_slogan_reseaux > h1 {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .button_inscription {
+        height: 4vw;
+        border-radius: 0 15px;
+        font-size: 1rem;
+    }
+
+    .button_connexion {
+        height: 4vw;
+        border-radius: 0 15px;
+        font-size: 1rem;
+    }
+
+    .reseaux {
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .reseaux img {
+        width: 9vw;
+    }
+
+    #bouton_suivant {
+        grid-column: 7/span 2;
+        grid-row: 11/12;
+        background-color: rgba(70, 71, 77, 0.75);
+        margin: auto;
+        padding: 10px 0 10px 10px;
+        /* padding-top: 33px; */
+        width: 60px;
+    }
+
+    #header_landing h2 {
+        grid-row: 10;
+        grid-column: 6/span 4;
+        background-color: rgba(70, 71, 77, 0.75);
+        font-size: 15px;
+        margin-top: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    main p{
+        font-size: 13px;
+    }
+
+    main h2 {
+        font-size: 16px;
+    }
+}
+
+@media  screen and (max-width: 1200px) and (min-width: 769px) {
+    #header_landing > .background {
+        width: auto;
+        height: 100vh;
+    }
+
+    .fond {
+        position: absolute;
+        right: -10px;
+        top: 230px;
+        width: 50vw;
+    }
+
+    .zone_slogan_reseaux {
+        grid-row: 5;
+        grid-column: 10/14;
+        z-index: 1;
+    }
+
+    .zone_slogan_reseaux > h1 {
+        font-size: 2.1vw;
+    }
+
+    main p{
+        font-size: 1.3vw;
+        line-height: 1.6vw;
+    }
+
+}
+
+@media  screen and (max-width: 1920px) and (min-width: 1201px)  {
+    #header_landing > .background {
+        height: 100vh;
+    }
+
+    .fond {
+        position: absolute;
+        right: -10px;
+        top: 230px;
+        width: 50vw;
+    }
+
+    .zone_slogan_reseaux {
+        grid-row: 6;
+        grid-column: 10/14;
+        z-index: 1;
+    }
+
+    .zone_slogan_reseaux > h1 {
+        font-size: 2.1vw;
+    }
+
+    main p{
+        font-size: 1.3vw;
+        line-height: 1.6vw;
+    }
+
+    main h2, footer h2 {
+        font-size: 2vw;
+
+    }
+
+
+}
+
+
+
+

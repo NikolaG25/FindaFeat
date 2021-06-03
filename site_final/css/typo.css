@@ -18,6 +18,12 @@ input {
     font-size: 2rem;
 }
 
+#mentions p {
+    font-family: TitilliumText22L, sans-serif;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
 #inscription_connexion label {
     color: #fcfcfc;
     font-size: 1.5rem;
@@ -62,3 +68,6 @@ main p{
     line-height: 1.3vw;
 }
 
+#mentions h2 {
+    font-size: 1.5rem;
+}

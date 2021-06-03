@@ -1,0 +1,78 @@
+h1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pref {
+    border: #FF8312 1px solid ;
+    border-radius: 0 15px;
+    max-width: max-content;
+    padding: 10px;
+    grid-column: 2/span 2;
+    margin-right: auto;
+    margin-left: auto;
+    grid-row: 2;
+}
+
+main {
+    display: grid;
+    grid-template-columns:repeat(12, 8.333%);
+    column-gap: 1%;
+    grid-template-rows: repeat(20, max-content);
+    width: 90.15%;
+}
+
+input, textarea, select {
+    border: #FF8312 1px solid;
+    border-radius: 0 10px;
+    background-color: #0B3A46;
+    color: #ffffff;
+    display: block;
+}
+
+#pref > input, textarea, select {
+    width: 184px;
+}
+
+#pref > div {
+    margin-top: 10px;
+}
+
+#pref > div:last-child {
+    margin-bottom: 10px;
+}
+
+#pref > div:first-child {
+    margin-top: 0;
+}
+
+#search {
+    grid-column: 9/span 2;
+    grid-row: 2;
+}
+
+label[for=search] {
+    grid-column: 9/span 1;
+    margin-top: auto;
+}
+
+#reseaux img {
+    width: 50px;
+}
+
+#profil {
+    grid-column: 4/9;
+    border: 1px solid #FF8312;
+    border-radius: 0 10px;
+}
+
+#perso img {
+    border: 1px solid #FF8312;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.role, .loc, .age {
+    font-size: 10px;
+}
